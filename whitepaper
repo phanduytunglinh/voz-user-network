@@ -1,0 +1,25 @@
+## Mở đầu
+
+Voz là diễn đàn có lượng user thuộc hàng top Việt Nam.
+
+Có những topic được nhiều người quan tâm và post comment liên tục.
+
+## Vấn đề
+
+Website Voz không cập nhận post mới trờ lại cho browser. User muốn xem post mới phải bấm refresh.
+Điều này tạo cơn mưa request đến server của voz vốn thường xuyên bị lỗi 503.
+
+Vấn đề này có thể được giải quyết từ phía voz nếu như admin chịu bỏ tiền cập nhật webmới sử dụng công nghệ mới hơn.
+Tuy nhiên không thể trông chờ điều này từ ban quản trị.
+
+## Giải pháp
+
+Thành lập 1 network giữa các voz user với nhau.
+Mỗi khi có 1 ai đó post comment mới vào topic, comment sẽ được gửi đi 2 nơi: voz server và lên [voz-user-network]
+Các thành viên của [voz-user-network] có thể tự cập nhật giao diện của mình mà không cần bấm f5 thông qua web browser extention.
+
+[voz-user-network] là một mạng ngang hàng p2p - không có server trung gian.
+
+## Chi tiêt [voz-user-network]
+Cập nhật sau
+
